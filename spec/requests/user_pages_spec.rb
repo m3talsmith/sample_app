@@ -57,6 +57,11 @@ describe "User pages" do
         it "should create a user" do
           expect { click_button "Sign up" }.to change(User, :count).by(1)
         end
-      end
+     
+     describe "followed by signout" do
+        before { click_link "Sign out" }
+        it { should have_link('Sign in') }
+      end     
     end
+  end
 end
