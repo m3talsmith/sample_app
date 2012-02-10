@@ -25,5 +25,5 @@ def sign_in(user)
   fill_in "Password", with: user.password
   click_button "Sign in"
   # Sign in when not using Capybara also
-  # How does this need to work now that we are using session?
+  cookies[:remember_token] = user.remember_token
 end
