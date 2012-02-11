@@ -190,3 +190,61 @@ ul.users {
     list-style: none;
   }
 }
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+
+  tr {
+    height: 70px;
+
+    &:nth-child(2n) td, tbody tr.even td {
+      background: white
+    }
+
+    td.gravatar {
+      border-top: 1px solid #ccc;
+      vertical-align: top;
+      width: 50px;
+    }
+
+    td.micropost {
+      border-top: 1px solid #ccc;
+      vertical-align: top;
+      padding-top: 10px;
+
+      span.timestamp {
+        display: block;
+        font-size: 85%;
+        color: #666;
+      }
+    }
+  }
+}
+
+div.user_info {
+  img {
+    padding-right: 0.1em;
+  }
+  a {
+    text-decoration: none;
+  }
+  span.user_name {
+    position: absolute;
+  }
+  span.microposts {
+    font-size: 80%;
+  }
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+
+  textarea {
+    height: 4em;
+    margin-bottom: 0;
+  }
+}
